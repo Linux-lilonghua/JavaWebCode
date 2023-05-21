@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "https://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="org.example.pojo.Course">
+    <select id="findById" parameterType="int" resultType="org.example.pojo.Course">
+        select * from c_course where id=#{id}
+    </select>
+    <select id="findBySchoolName" parameterType="String" resultType="org.example.pojo.Course">
+        select * from c_course as c,s_school as s where c.sid=s.id and s.schoolname=#{id}
+    </select>
+    <select id="findByAll"  resultType="org.example.pojo.Course">
+        select c.id,name,hours,sid from c_course as c,s_school as s where sid in
+        (select id from s_school) and s.id=c.sid order by c.sid
+    </select>
+    <update id="updateByHours" parameterType="int">
+        update c_course set hours=hours+#{hours} where id=#{id}
+    </update>
+    <insert id="insertByCourse" parameterType="org.example.pojo.Course">
+        insert into c_course(id,name,hours,sid)values(#{id},#{name},#{hours},#{sid})
+    </insert>
+</mapper>

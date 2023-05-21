@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="org.example.dao.CourseMapper">
+    <insert id="addCourse" parameterType="Course">
+        insert into mybatis.c_course(name,hours,sid)
+        values (#{name},#{hours},#{sid});
+    </insert>
+
+    <delete id="deleteCourseById" parameterType="int">
+        delete from mybatis.c_course where id = #{id};
+    </delete>
+
+    <update id="updateCourse" parameterType="Course">
+        update mybatis.c_course
+        set name = #{name},hours = #{hours},sid=#{sid}
+        where id = #{id};
+    </update>
+
+    <select id="queryCourseById" resultType="Course">
+        select * from mybatis.c_course where id = #{id};
+    </select>
+
+    <select id="queryAllCourse" resultType="Course">
+        select * from mybatis.c_course;
+    </select>
+</mapper>

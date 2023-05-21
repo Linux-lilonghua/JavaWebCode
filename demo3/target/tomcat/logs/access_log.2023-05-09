@@ -1,0 +1,10 @@
+0:0:0:0:0:0:0:1 - - [09/May/2023:00:16:48 +0800] "GET /demo3/login HTTP/1.1" 404 973 http-bio-8080-exec-1 37
+0:0:0:0:0:0:0:1 - - [09/May/2023:00:16:48 +0800] "GET /favicon.ico HTTP/1.1" 404 - http-bio-8080-exec-3 0
+0:0:0:0:0:0:0:1 - - [09/May/2023:00:17:27 +0800] "GET /demo3/course/allCourse HTTP/1.1" 200 4696 http-bio-8080-exec-4 801
+0:0:0:0:0:0:0:1 - - [09/May/2023:00:17:31 +0800] "GET /demo3/course/toAddCourse HTTP/1.1" 200 1815 http-bio-8080-exec-5 7
+0:0:0:0:0:0:0:1 - - [09/May/2023:00:17:31 +0800] "GET /demo3/Image/test1.jpg HTTP/1.1" 304 - http-bio-8080-exec-6 9
+0:0:0:0:0:0:0:1 - - [09/May/2023:00:18:54 +0800] "GET /demo3/course/toAddCourse HTTP/1.1" 200 1815 http-bio-8080-exec-8 6
+0:0:0:0:0:0:0:1 - - [09/May/2023:00:21:10 +0800] "GET /demo3/course/toAddCourse HTTP/1.1" 200 1840 http-bio-8080-exec-1 375
+0:0:0:0:0:0:0:1 - - [09/May/2023:00:21:13 +0800] "GET /demo3/course/allCourse HTTP/1.1" 200 4696 http-bio-8080-exec-3 834
+0:0:0:0:0:0:0:1 - - [09/May/2023:00:21:14 +0800] "GET /demo3/course/toAddCourse HTTP/1.1" 200 1840 http-bio-8080-exec-4 3
+0:0:0:0:0:0:0:1 - - [09/May/2023:00:22:12 +0800] "GET /demo3/course/toAddCourse HTTP/1.1" 200 1820 http-bio-8080-exec-1 358

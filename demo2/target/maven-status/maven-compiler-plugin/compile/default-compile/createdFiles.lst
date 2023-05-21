@@ -1,0 +1,6 @@
+org\example\pojo\School.class
+org\example\controller\CourseController.class
+org\example\service\CourseServiceImpl.class
+org\example\pojo\Course.class
+org\example\service\CourseService.class
+org\example\dao\CourseMapper.class

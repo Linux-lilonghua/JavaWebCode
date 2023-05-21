@@ -1,0 +1,15 @@
+org\example\pojo\School.class
+org\example\controller\CourseController.class
+org\example\controller\CourseController$1.class
+org\example\service\CourseServiceImpl.class
+org\example\controller\UserController.class
+org\example\service\UserServiceImpl.class
+org\example\interceptor\ResourcesInterceptor.class
+org\example\pojo\User.class
+org\example\utils\JSONFileUtils.class
+org\example\utils\RandomValidateCode.class
+org\example\pojo\Course.class
+org\example\dao\UserMapper.class
+org\example\service\CourseService.class
+org\example\service\UserService.class
+org\example\dao\CourseMapper.class
